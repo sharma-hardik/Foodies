@@ -185,7 +185,7 @@ ul li{
 .header5{
 	height: 710px;
 	width: 100%;
-	border: 2px solid green;
+	border: 0px solid green;
 }
 
 .video  a i{
@@ -199,7 +199,7 @@ ul li{
 	font-size: 210px;
 }
  .hear{
-    	border:2px solid red; 
+    	border:0px solid red; 
     	height: 600px;
     }
 .robo{
