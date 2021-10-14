@@ -81,6 +81,10 @@ footer{
 	border: 0px solid green;
 	background-color: #ffc845;
 }
+#rapid{
+	display: flex;
+	justify-content: space-between;
+}
 .section1 ul:before{
 	font-family: 'Poppins', sans-serif;
 	content: "section";
@@ -279,10 +283,13 @@ ul li{
 	input{
 		width:30%
 	}
+	#rapid{
+		display: unset;
+	}
 	footer{
 		font-size: 10px;
 		padding: 100px;
-		height: 300px;
+		height: 800px;
 		width:100%;
 	}
 }
