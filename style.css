@@ -269,9 +269,9 @@ ul li{
 	width: 100%;
 }
 }
-@media(max-width: 768px){
+@media(max-width: 720px){
 	html{
-		font-size: 12px;
+		font-size: 10px;
 	}
 	footer{
 		font-size: 10px;
