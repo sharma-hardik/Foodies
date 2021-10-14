@@ -4,13 +4,28 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-.header{
-	background-image: url("banner.png");
+
+html{
+	scroll-behavior: smooth;
+}
+header{
 	background-size: cover;
 	background-position: center;
-	height: 640px;
-	width: 100%;
-	border: 0px solid red;
+	background-image: url("banner.png");
+}
+
+nav{
+	background-color: transparent;
+}
+a{
+	font-size: 1.2rem;
+}
+i{
+	color: green;
+	font-size: 3rem;
+}
+.intro{
+	display: flex;
 }
 .img1{
 	background-image: url("about.png");
@@ -26,39 +41,34 @@
 	padding: 50px;
 	padding-top: 130px;
 }
-.card1 , .card2 ,.card3{
-	height: 320px;
-}
-.card2{
-	background-image: url("team2.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.card3{
-	background-image: url("team1.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 .header1{
 	display: flex;
 	height: 600px;
 	width: 100%;
 	border: 0px solid red;
+	font-size: 1.3rem;
 }
-.header3{
+.intro div{
+	width: 50%;
+	padding: 25px;
+	border: 0px solid red;
+}
+
+footer{
 	width: 100%;
-	height: 600px;
+	height: 430px;
+	border: 2px solid brown;
+}
+.intro div div{
+	width: 100%;
 	border: 0px solid green;
 }
-.header5{
-	width: 100%;
-	height: 680px;
-	border: 0px solid green;
+div p{
+	font-size: 16.6px;
 }
-.condition: before{
-  content: "&copy;";
+.header2{
+	display: flex;
+	height: 430px;
 }
 footer{
 	font-family: 'Poppins', sans-serif;
@@ -71,15 +81,28 @@ footer{
 	border: 0px solid green;
 	background-color: #ffc845;
 }
-ul{
-	padding-right: 30px;
-}
 .section1 ul:before{
 	font-family: 'Poppins', sans-serif;
 	content: "section";
 	font-weight: "bold";
 	text-transform: uppercase;
 	font-size: 2rem;
+	border: 0px solid brown;
+}
+.section2 ul:before{
+	content: "section";
+	font-family: 'Poppins', sans-serif;
+	font-weight: "bold";
+	text-transform: uppercase;
+	font-size: 2rem;
+	border: 0px solid green;
+}
+.section3 ul:before{
+	content: "section";
+	font-weight: "bold";
+	text-transform: uppercase;
+	font-size: 2rem;
+	border: 2px solid red;
 }
 .ascomp{
 	width: 100%;
@@ -88,32 +111,40 @@ ul{
 	width: 50%;
 	text-align: center;
 }
-.section2 ul:before{
-	content: "section";
-	font-family: 'Poppins', sans-serif;
-	font-weight: "bold";
-	text-transform: uppercase;
-	font-size: 2rem;
-}
-.section3 ul:before{
-	content: "section";
-	font-weight: "bold";
-	text-transform: uppercase;
-	font-size: 2rem;
-}
+
 ul li{
 	list-style: none;
 	text-transform: uppercase;
 }
-.header2{
-	height: 600px;
-	width: 100%;
-	border: 0px solid lightcoral;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	justify-items: center;
+.chef,.card3,.card2{
+	padding: 70px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
+.card2,.card3{
+	width: 420px;
+	margin: 20px;
+}
+
+.card2{
+	background-size: cover;
+	background-position: center;
+	background-image: url("team1.jpg");
+}
+.card3{
+	background-size: cover;
+	background-position: center;
+	background-image: url("team2.jpg");
+}
+.img{
+	background-image: url("bannerimg.png");
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 30rem;
+	width: 352px;
+	border: 0px solid orange;
+}
+
 .header4{
 	width: 100%;
 	height: 600px;
@@ -131,20 +162,17 @@ ul li{
 .stage{
 	width: 40%;
 	  border: 0px solid blue;
-	  height: 496px;
+	  height: 550px;
 }
 .stage div a{
 	border-radius: 30px;
-}
-.condition div i{
-	color: black;
 }
 .video{
 	margin-left: 120px;
 	width: 50%;
 	border-radius: 40px;
 	border: 0px solid green;
-	  height: 496px;
+	  height: 550px;
 	  background-image: url("images.jpg");
 	  background-position: center;
 	  background-size: cover;
@@ -154,11 +182,12 @@ ul li{
 	  justify-items: center;
 	  align-items: center;
 }
-.chef{
-	display: flex;
-	justify-content: space-around;
-	border: 0px solid black;
+.header5{
+	height: 710px;
+	width: 100%;
+	border: 2px solid green;
 }
+
 .video  a i{
 	font-size: 190px;
 	color: white;
@@ -169,102 +198,84 @@ ul li{
 .video  a i:hover{
 	font-size: 210px;
 }
-.chef  div{
-	margin: 20px;
-   border: 0px solid red;
-   height: 400px;
-   width: 330px;	
+ .hear{
+    	border:2px solid red; 
+    	height: 600px;
+    }
+.robo{
+	display:  flex;
 }
-.text{
-	width: 288px;
-	padding: 30px;
-	border: 0px solid black;
-}
-.mat{
-	height: 600px;
-	border: 0px solid greenyellow;
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: repeat(2, 1fr);
-}
-.mat div{
-	border: 0px solid lightcoral;
-	display: flex;
-}
-.img{
-	background-image: url("bannerimg.png");
-	background-position: left;
-	background-repeat: no-repeat;
-	background-size: 30rem;
-	width: 352px;
-	border: 0px solid orange;
-}
-a{
-	font-size: 1.2rem;
-}
-i{
-	color: green;
-	font-size: 3rem;
-}
-span{
-	color: whitesmoke;
-}
-.box{
-	border: 0px solid blue;
-	display: flex;
-}
-.box div{
-	padding-top: 50px;
-	height: 85vh;
-	width: 50%;
-	text-overflow:inherit; 
-}
-@media( min-width: 769px) and (max-width: 990px ){
-	html{
-		font-size: 14px;
-	}
-	.stage{
-		width: 100%;
-	}
-    .value{
+@media(max-width: 990px){
+	.intro{
 		display: unset;
+		height: 1440px;
 	}
+    .img{
+    	width: 100%;
+    	background-size: contain;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	height: 550px;
+    }
+    .header5{
+    	height: 1700px;
+    }
+.grow{
+	width: 100%;
+}
+.stage{
+	width: 100%;
+}
+.hear{
+	height: 1590px;
+}
+.video{
+	width: 100%;
+	margin-left: 0px;
+}
+.header4{
+	height: 1200px;
+}
+.robo{
+	display: unset;
+}
+    .header2{
+    	display: unset;
+    	font-size: 3rem;
+    }
+    .card2,.card3{
+    	width: 90%;
+    	height: 440px;
+    }
+    nav{
+    	background-color: white;
+    }
+    .header1{
+    	display: unset;
+    }
+    .link ,.img1{
+	border: 0px solid blue;
+	width: 100%;
+}
+.value{
+	display: unset;
+	height: 1000px;
+}
+.img1{
+	height: 450px;
+	width: 100%;
+}
+.intro div{
+	width: 100%;
+}
 }
 @media(max-width: 768px){
 	html{
 		font-size: 12px;
 	}
-	.text{
-		width: 70%;
-	}
-	.box{
-		display: unset;
-	}
-	.stage{
-		width: 100%;
-		height: 400px;
-	}
-	.video{
-		width: 100%;
-		height: 400px;
-
-	}
-	.img{
-		background-position: center;
-	}
-	.chef{
-		display: unset;
-	}
-	.header{
-		height: 950px;
-	}
-	.box div{
-		height: 70vh;
-		width: 100%;
-	}
-	.value{
-		display: unset;
-		height: 800px;
-		border: 2px solid greenyellow;
+	footer{
+		font-size: 10px;
+		padding: 100px;
+		height: 300px;
 	}
 }
