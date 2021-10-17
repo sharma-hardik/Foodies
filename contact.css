@@ -5,9 +5,9 @@
 }
 
 header{
-	background-image: url("banner.png");
+	background-image: url("innerbanner.png");
 	background-size: cover;
-	background-position: fixed;
+	background-position: center;
 }
 nav{
 	position: absolute;
